@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <h2>😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹</h2>
+@using (Html.BeginForm("Index",
+    "Home",
+    FormMethod.Post,
+    new { enctype = "multipart/form-data" }))
+{
+    <br>
+    <br>
+    <label for="file">Загрузить(Result v5.txt)</label>
+    <br>
+    <input type="file" name="file" id="file" accept=".txt" />
+    <br>
+    <br>
+
+    <input type="submit" value="Дешифровать" />
+
+    <br>
+    <br>
+
+    @ViewBag.Message
+}
